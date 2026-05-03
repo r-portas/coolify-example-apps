@@ -13,4 +13,5 @@ Use the [root README](../README.md) flow with:
 - **Base Directory:** `/host-network`
 - **Docker Compose Location:** `/compose.yaml`
 
-If your platform routes traffic through a reverse proxy that expects standard Docker bridge port publishing, you may need extra host firewall or routing configuration for host-mode services.
+In the Configuration > General tab > Build section ensure "Preserve Repository During Deployment" is checked.
+Without this, the `public` directory won't be available to the container.
