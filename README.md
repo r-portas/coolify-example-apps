@@ -21,4 +21,5 @@ A collection of example apps for deploying to Coolify.
 
 ## Apps
 
+- [Host network](./host-network)
 - [UpTime Kuma](./uptime-kuma)
