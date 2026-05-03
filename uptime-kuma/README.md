@@ -10,16 +10,6 @@ Example deployment of [Uptime Kuma](https://github.com/louislam/uptime-kuma) via
 
 The `DUMMY_TEST_VAR` environment variable in `compose.yaml` is a placeholder; remove or replace it with real configuration as needed.
 
-## Run locally
-
-From this directory:
-
-```bash
-docker compose up
-```
-
-Open [http://localhost:3001](http://localhost:3001) and complete the Uptime Kuma setup wizard.
-
 ## Deploy with Coolify
 
 Use the [root README](../README.md) flow with:

@@ -7,3 +7,15 @@ services:
     volumes:
       - ./public:/srv:ro
     command: python -m http.server 8888
+    healthcheck:
+      test:
+        [
+          "CMD",
+          "python",
+          "-c",
+          "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8888/')",
+        ]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
